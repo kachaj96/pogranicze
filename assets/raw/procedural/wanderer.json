@@ -1,0 +1,38 @@
+{
+  "name": "wanderer",
+  "frame_size": [
+    192,
+    144
+  ],
+  "anchor": [
+    80,
+    128
+  ],
+  "directions": [
+    "N",
+    "NE",
+    "E",
+    "SE",
+    "S",
+    "SW",
+    "W",
+    "NW"
+  ],
+  "source": "procedural Blender render, tools/art/blender",
+  "animations": {
+    "idle": {
+      "file": "wanderer_idle.png",
+      "frames": 4,
+      "fps": 4,
+      "loop": true,
+      "layout": "rows=directions, cols=frames"
+    },
+    "walk": {
+      "file": "wanderer_walk.png",
+      "frames": 8,
+      "fps": 8,
+      "loop": true,
+      "layout": "rows=directions, cols=frames"
+    }
+  }
+}

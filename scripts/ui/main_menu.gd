@@ -2,6 +2,7 @@ extends Control
 ## Start menu. Placeholder until exploration becomes the default entry.
 
 const COMBAT_SCENE := "res://scenes/combat/combat.tscn"
+const ART_SCENE := "res://scenes/art/art_showcase.tscn"
 
 
 func _ready() -> void:
@@ -27,6 +28,7 @@ func _ready() -> void:
 	sub.add_theme_color_override("font_color", Color("#816782"))
 	box.add_child(sub)
 	box.add_child(_button("Walka próbna: Polana w Starym Lesie", func() -> void: get_tree().change_scene_to_file(COMBAT_SCENE)))
+	box.add_child(_button("Podgląd grafiki (test stylu)", func() -> void: get_tree().change_scene_to_file(ART_SCENE)))
 	if OS.get_name() != "Android":
 		box.add_child(_button("Wyjście", func() -> void: get_tree().quit()))
 

@@ -1,0 +1,237 @@
+{
+  "assets": [
+    {
+      "file": "block_stone.png",
+      "sha12": "0d2dbc7f06c0",
+      "size": [
+        64,
+        68
+      ],
+      "source": "procedural, tools/art",
+      "license": "project-owned",
+      "perspective": "isometric 2:1 (camera elev 30, azim 45)",
+      "review": "pending",
+      "anchor": [
+        32,
+        52
+      ],
+      "footprint_cells": [
+        1,
+        1
+      ],
+      "generator": "tools/art/gen_terrain.py"
+    },
+    {
+      "file": "floor_crack.png",
+      "sha12": "dd3f257d8056",
+      "size": [
+        64,
+        32
+      ],
+      "source": "procedural, tools/art",
+      "license": "project-owned",
+      "perspective": "isometric 2:1 (camera elev 30, azim 45)",
+      "review": "pending",
+      "anchor": [
+        32,
+        16
+      ],
+      "generator": "tools/art/gen_terrain.py"
+    },
+    {
+      "file": "floor_dirt_path.png",
+      "sha12": "010235dbab6c",
+      "size": [
+        64,
+        32
+      ],
+      "source": "procedural, tools/art",
+      "license": "project-owned",
+      "perspective": "isometric 2:1 (camera elev 30, azim 45)",
+      "review": "pending",
+      "anchor": [
+        32,
+        16
+      ],
+      "generator": "tools/art/gen_terrain.py"
+    },
+    {
+      "file": "floor_grass_0.png",
+      "sha12": "29474c9fbd09",
+      "size": [
+        64,
+        32
+      ],
+      "source": "procedural, tools/art",
+      "license": "project-owned",
+      "perspective": "isometric 2:1 (camera elev 30, azim 45)",
+      "review": "pending",
+      "anchor": [
+        32,
+        16
+      ],
+      "generator": "tools/art/gen_terrain.py"
+    },
+    {
+      "file": "floor_grass_1.png",
+      "sha12": "ccf8718322ea",
+      "size": [
+        64,
+        32
+      ],
+      "source": "procedural, tools/art",
+      "license": "project-owned",
+      "perspective": "isometric 2:1 (camera elev 30, azim 45)",
+      "review": "pending",
+      "anchor": [
+        32,
+        16
+      ],
+      "generator": "tools/art/gen_terrain.py"
+    },
+    {
+      "file": "floor_grass_2.png",
+      "sha12": "d834896f864b",
+      "size": [
+        64,
+        32
+      ],
+      "source": "procedural, tools/art",
+      "license": "project-owned",
+      "perspective": "isometric 2:1 (camera elev 30, azim 45)",
+      "review": "pending",
+      "anchor": [
+        32,
+        16
+      ],
+      "generator": "tools/art/gen_terrain.py"
+    },
+    {
+      "file": "house.png",
+      "sha12": "170429f02928",
+      "size": [
+        320,
+        272
+      ],
+      "source": "procedural, tools/art",
+      "license": "project-owned",
+      "perspective": "isometric 2:1 (camera elev 30, azim 45)",
+      "review": "pending",
+      "anchor": [
+        160,
+        226
+      ],
+      "footprint_cells": [
+        3,
+        2
+      ],
+      "generator": "tools/art/blender/props.py"
+    },
+    {
+      "file": "seal_stone.png",
+      "sha12": "e8fabeafdc95",
+      "size": [
+        96,
+        144
+      ],
+      "source": "procedural, tools/art",
+      "license": "project-owned",
+      "perspective": "isometric 2:1 (camera elev 30, azim 45)",
+      "review": "pending",
+      "anchor": [
+        48,
+        128
+      ],
+      "footprint_cells": [
+        1,
+        1
+      ],
+      "generator": "tools/art/blender/props.py"
+    },
+    {
+      "file": "tree.png",
+      "sha12": "23afd228633f",
+      "size": [
+        288,
+        240
+      ],
+      "source": "procedural, tools/art",
+      "license": "project-owned",
+      "perspective": "isometric 2:1 (camera elev 30, azim 45)",
+      "review": "pending",
+      "anchor": [
+        144,
+        216
+      ],
+      "footprint_cells": [
+        1,
+        1
+      ],
+      "generator": "tools/art/blender/props.py"
+    },
+    {
+      "file": "wanderer_idle.png",
+      "sha12": "aa865d5442ff",
+      "size": [
+        768,
+        1152
+      ],
+      "source": "procedural, tools/art",
+      "license": "project-owned",
+      "perspective": "isometric 2:1 (camera elev 30, azim 45)",
+      "review": "pending",
+      "frame_size": [
+        192,
+        144
+      ],
+      "anchor": [
+        80,
+        128
+      ],
+      "directions": [
+        "N",
+        "NE",
+        "E",
+        "SE",
+        "S",
+        "SW",
+        "W",
+        "NW"
+      ],
+      "generator": "tools/art/blender/wanderer.py",
+      "meta": "wanderer.json"
+    },
+    {
+      "file": "wanderer_walk.png",
+      "sha12": "bf379bcd7020",
+      "size": [
+        1536,
+        1152
+      ],
+      "source": "procedural, tools/art",
+      "license": "project-owned",
+      "perspective": "isometric 2:1 (camera elev 30, azim 45)",
+      "review": "pending",
+      "frame_size": [
+        192,
+        144
+      ],
+      "anchor": [
+        80,
+        128
+      ],
+      "directions": [
+        "N",
+        "NE",
+        "E",
+        "SE",
+        "S",
+        "SW",
+        "W",
+        "NW"
+      ],
+      "generator": "tools/art/blender/wanderer.py",
+      "meta": "wanderer.json"
+    }
+  ]
+}

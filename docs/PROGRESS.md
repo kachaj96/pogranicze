@@ -44,6 +44,14 @@ Cała grafika rysowana kodem (romby, bloki, figury). Brak audio. Brak eksploracj
 - Istotne z dokumentacji: tileset `perspective="isometric"`, `piece_set="isometric-2x4-64"` pasuje do kafla 64×32; pixel art domyślnie `gemini-nano-banana-2.1`, ok. 12 kredytów za 1K (do potwierdzenia `list_generation_models`); postać izometryczna przez `generate_character(perspective="isometric")`.
 - Plan M5: `get_credit_balance` → `list_generation_models` / `list_tileset_options` → 1 tileset podłoża + 1 postać wzorcowa → stop na ocenę. Manifest: `assets/raw/spritecook/spritecook-assets.json` (tylko asset_id, sha12, label).
 
+## Grafika proceduralna (test stylu, review: pending)
+- Pipeline bez kosztów: Blender 4.5.4 LTS (Cycles CPU) renderuje przebiegi danych (światło, AO, indeks materiału, cień), `tools/art/pixelize.py` mapuje je na rampy palety z Art Bible + selektywny kontur. Teren: `tools/art/gen_terrain.py` (PIL).
+- Kamera: ortho, elewacja 30°, azymut 45° = dokładne 2:1, 1 jednostka = 1 pole = 64×32 px. Światło z lewej góry.
+- Gotowe (w `assets/raw/procedural`, manifest `manifest.json`): Wędrowiec 8 kierunków × idle 4 + walk 8 klatek (klatka 192×144, anchor 80,128), chata 3×2, drzewo, kamień pieczęci, blok kamienny, 5 kafli podłoża.
+- Odtworzenie: `BLENDER=... tools/art/build_all.sh` (ok. 1 min). Blender nie jest w repo; w nowej sesji pobrać 4.5.4 LTS z download.blender.org.
+- Podgląd: menu → „Podgląd grafiki”, scena `scenes/art/art_showcase.tscn` (zoom 2×).
+- Słabe strony: brak kafli przejściowych trawa/ścieżka, dach bez faktury gontu, postać prostsza niż ręczny pixel art, brak animacji ataku.
+
 ## Blokery wymagające człowieka
 1. Dodać custom connector SpriteCook na claude.ai (przeglądarka) i zalogować się OAuth, potem nowa sesja.
 2. Test na telefonie Android (później, przy bramce M2/M5).
