@@ -1,0 +1,21 @@
+# Godot 4
+.godot/
+*.translation
+/android/
+/build/
+/export/
+
+# Secrets and signing - never commit
+.env
+*.env
+*.keystore
+*.jks
+export_credentials.cfg
+*.pem
+*.p12
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.log
+*.tmp

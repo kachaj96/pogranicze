@@ -1,0 +1,24 @@
+{
+  "wanderer_iron": {
+    "name": "Wędrowiec", "team": "players", "hp": 30, "ap": 6, "mp": 3,
+    "abilities": ["iron_strike", "iron_shove", "iron_cleave", "iron_guard"],
+    "glyph": "W", "color": "#4f86a8"
+  },
+  "companion_whisper": {
+    "name": "Wiera", "team": "players", "hp": 22, "ap": 6, "mp": 3,
+    "abilities": ["whisper_bolt", "whisper_repel", "ash_burst", "whisper_ward"],
+    "glyph": "V", "color": "#5fa08a"
+  },
+  "split_wolf": {
+    "name": "Rozszczepiony Wilk", "team": "enemies", "hp": 12, "ap": 6, "mp": 4,
+    "abilities": ["wolf_bite"], "glyph": "w", "color": "#a85a4a"
+  },
+  "hollow_guard": {
+    "name": "Pusty Strażnik", "team": "enemies", "hp": 20, "ap": 6, "mp": 2,
+    "abilities": ["guard_smash"], "glyph": "G", "color": "#8a6a5a"
+  },
+  "root_whisperer": {
+    "name": "Szeptucha Korzeni", "team": "enemies", "hp": 10, "ap": 6, "mp": 3,
+    "abilities": ["root_thorn"], "glyph": "r", "color": "#9a5a7a"
+  }
+}

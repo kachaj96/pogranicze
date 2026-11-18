@@ -1,0 +1,65 @@
+{
+  "iron_strike": {
+    "name": "Cios", "school": "IRON", "ap_cost": 3,
+    "min_range": 1, "max_range": 1, "range_metric": "chebyshev", "needs_los": true,
+    "target": "enemy", "area": "single", "damage": 5,
+    "description": "Cios bronią w sąsiednie pole (8 kierunków)."
+  },
+  "iron_shove": {
+    "name": "Pchnięcie", "school": "IRON", "ap_cost": 3,
+    "min_range": 1, "max_range": 1, "range_metric": "chebyshev", "needs_los": true,
+    "target": "enemy", "area": "single", "damage": 1, "push": 2,
+    "description": "Odpycha wroga o 2 pola. Uderzenie w przeszkodę zadaje 2 obr. za każde niewykorzystane pole."
+  },
+  "iron_cleave": {
+    "name": "Zamach", "school": "IRON", "ap_cost": 4,
+    "min_range": 1, "max_range": 1, "range_metric": "chebyshev", "needs_los": true,
+    "target": "cell", "area": "cross1", "damage": 3,
+    "description": "Szeroki zamach: pole celu i 4 sąsiednie. Nie rani sojuszników."
+  },
+  "iron_guard": {
+    "name": "Osłona", "school": "IRON", "ap_cost": 2,
+    "min_range": 0, "max_range": 1, "range_metric": "chebyshev", "needs_los": false,
+    "target": "ally", "area": "single", "ward": 5,
+    "description": "Osłona pochłania 5 obrażeń do początku następnej fazy drużyny."
+  },
+  "whisper_bolt": {
+    "name": "Szept-grot", "school": "WHISPER", "ap_cost": 3,
+    "min_range": 2, "max_range": 5, "range_metric": "manhattan", "needs_los": true,
+    "target": "enemy", "area": "single", "damage": 4,
+    "description": "Pocisk na dystans 2-5 pól, wymaga linii wzroku."
+  },
+  "whisper_repel": {
+    "name": "Odtrącenie", "school": "WHISPER", "ap_cost": 3,
+    "min_range": 1, "max_range": 3, "range_metric": "chebyshev", "needs_los": true, "aim": "line8",
+    "target": "enemy", "area": "single", "damage": 0, "push": 2,
+    "description": "Odpycha wroga w linii prostej lub ukośnej (8 kierunków) o 2 pola."
+  },
+  "ash_burst": {
+    "name": "Popielny wybuch", "school": "ASH", "ap_cost": 4,
+    "min_range": 2, "max_range": 4, "range_metric": "manhattan", "needs_los": true,
+    "target": "cell", "area": "cross1", "damage": 3,
+    "description": "Wybuch na polu i 4 sąsiednich. Nie rani sojuszników."
+  },
+  "whisper_ward": {
+    "name": "Pieczęć ochronna", "school": "WHISPER", "ap_cost": 3,
+    "min_range": 0, "max_range": 3, "range_metric": "manhattan", "needs_los": true,
+    "target": "ally", "area": "single", "ward": 4,
+    "description": "Pieczęć pochłania 4 obrażenia do początku następnej fazy drużyny."
+  },
+  "wolf_bite": {
+    "name": "Ugryzienie", "school": "BEAST", "ap_cost": 3,
+    "min_range": 1, "max_range": 1, "range_metric": "chebyshev", "needs_los": true,
+    "target": "enemy", "area": "single", "damage": 4
+  },
+  "guard_smash": {
+    "name": "Miażdżenie", "school": "BEAST", "ap_cost": 4,
+    "min_range": 1, "max_range": 1, "range_metric": "manhattan", "needs_los": true,
+    "target": "enemy", "area": "single", "damage": 6
+  },
+  "root_thorn": {
+    "name": "Cierń", "school": "BEAST", "ap_cost": 3,
+    "min_range": 2, "max_range": 4, "range_metric": "manhattan", "needs_los": true,
+    "target": "enemy", "area": "single", "damage": 3
+  }
+}

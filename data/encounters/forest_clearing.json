@@ -1,0 +1,17 @@
+{
+  "id": "forest_clearing",
+  "name": "Polana w Starym Lesie",
+  "width": 10,
+  "height": 10,
+  "walls": [[3, 3], [3, 4], [6, 5], [6, 6], [5, 1], [2, 8], [8, 8], [0, 0], [9, 0]],
+  "cracks": [[5, 3], [4, 7], [7, 3], [8, 5]],
+  "players": [
+    {"slot": 0, "unit": "wanderer_iron", "pos": [1, 4]},
+    {"slot": 1, "unit": "companion_whisper", "pos": [1, 6]}
+  ],
+  "enemies": [
+    {"unit": "split_wolf", "pos": [8, 2]},
+    {"unit": "hollow_guard", "pos": [8, 6]},
+    {"unit": "root_whisperer", "pos": [9, 8]}
+  ]
+}
