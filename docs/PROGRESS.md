@@ -39,10 +39,13 @@ Cała grafika rysowana kodem (romby, bloki, figury). Brak audio. Brak eksploracj
 - Zoom niecałkowity jest OK dla placeholderów; dla pixel artu trzeba przejść na kroki całkowite.
 
 ## SpriteCook
-Plugin jest w katalogu pluginów Anthropic (SpriteCook, v0.1.8: MCP + skille sprites/tilesets/animate/godot/presets), na koncie **nie był włączony**. Brak narzędzi MCP w tej sesji → kredyty i modele niesprawdzone, zero generacji. Plan: po włączeniu najpierw `credits`/lista modeli, potem 1 hero asset + 1 kafel 64×32 (M5).
+- Plugin nie da się włączyć z aplikacji mobilnej Claude. Wariant przyjęty: serwer MCP jako custom connector claude.ai (`https://mcp.spritecook.ai/mcp/claude`, OAuth) + oficjalne skille skopiowane do `.claude/skills/` (MIT, źródło w `.claude/skills/SPRITECOOK_SOURCE.md`).
+- Serwer osiągalny z kontenera (401 = wymaga logowania). Kredyty i modele jeszcze niesprawdzone, zero generacji.
+- Istotne z dokumentacji: tileset `perspective="isometric"`, `piece_set="isometric-2x4-64"` pasuje do kafla 64×32; pixel art domyślnie `gemini-nano-banana-2.1`, ok. 12 kredytów za 1K (do potwierdzenia `list_generation_models`); postać izometryczna przez `generate_character(perspective="isometric")`.
+- Plan M5: `get_credit_balance` → `list_generation_models` / `list_tileset_options` → 1 tileset podłoża + 1 postać wzorcowa → stop na ocenę. Manifest: `assets/raw/spritecook/spritecook-assets.json` (tylko asset_id, sha12, label).
 
 ## Blokery wymagające człowieka
-1. Włączyć plugin SpriteCook i zalogować się OAuth (instrukcja w raporcie sesji).
+1. Dodać custom connector SpriteCook na claude.ai (przeglądarka) i zalogować się OAuth, potem nowa sesja.
 2. Test na telefonie Android (później, przy bramce M2/M5).
 
 ## Następne kroki
